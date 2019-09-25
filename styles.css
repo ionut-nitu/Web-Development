@@ -1,3 +1,99 @@
-p{ 
+* {
+    margin:0;
+    padding:0;
+}
 
+.parent .primul {
+/*    lungime */
+    width: 50px;
+/*    latime */
+    height: 50px;
+/*    culoare element*/
+    background-color: red;
+/*    marime text */
+    font-size: 20px;
+/*    spatiu in interior*/
+    padding-top:40px;
+    padding-bottom:40px;
+    padding-left:40px;
+    padding-right:40px;
+/*    spatiu in exterior*/
+    margin:20px;
+    border: 5px solid blue;
+}
+.parent {
+    position:relative;
+    margin-top:500px;
+    height: 5000px;
+        background-color: purple;
+}
+.parent div {
+    width: 50px;
+/*    latime */
+    height: 50px;
+/*    culoare element*/
+    background-color: green;
+/*    marime text */
+    font-size: 20px;
+/*    spatiu in interior*/
+    padding-top:40px;
+    padding-bottom:40px;
+    padding-left:40px;
+    padding-right:40px;
+/*    spatiu in exterior*/
+    margin:20px;
+    border: 5px solid blue;
+}
+
+.parent div:nth-child(2) {
+    top:0;
+    right:0;
+     width: 50px;
+/*    latime */
+    height: 50px;
+/*    culoare element*/
+    background-color: yellow;
+/*    marime text */
+    font-size: 20px;
+/*    spatiu in interior*/
+    padding-top:40px;
+    padding-bottom:40px;
+    padding-left:40px;
+    padding-right:40px;
+/*    spatiu in exterior*/
+    margin:20px;
+    border: 5px solid blue;
+    position:fixed;
+    z-index:1;
+    width:100%;
+    
+}
+.parent .altreilea {
+    top:0;
+    left:0px;
+    position:static;
+}
+
+.otreime {
+    display:inline-block;
+    width:25%;
+    height:120px;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.green {
+    background-color: green;
+}
+.red {
+    margin-left: auto;
+    background-color:red;
+}
+
+.center {
+    margin-left:auto;
+    width:50%;
+    background-color:black;
 }
